@@ -7,13 +7,13 @@ import {
   useSetRecoilState
 } from 'recoil'
 
-type TodoItem = {
+type Item = {
   id: number
   text: string
   isCompleted: boolean
 }
 
-const todoListState = atom<TodoItem[]>({
+const todoListState = atom<Item[]>({
   key: 'todoListState',
   default: []
 })
@@ -67,7 +67,7 @@ const getId = () => {
   return id++
 }
 
-const TodoItem = ({ item }: { item: TodoItem }) => {
+const TodoItem = ({ item }: { item: Item }) => {
   const [todoList, setTodoList] = useRecoilState(todoListState)
   const index = todoList.findIndex((listItem) => listItem === item)
 
