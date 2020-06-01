@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "git@github.com:mp3/recoil-getting-started.git",
   "author": "mp3 <im.in.a.coma.xxx@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }
